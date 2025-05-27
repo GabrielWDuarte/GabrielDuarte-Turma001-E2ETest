@@ -1,15 +1,15 @@
 {
-  "name": "gabrielduarte-turma001-e2etest",
+  "name": "GabrielDuarte-Turma001-E2ETest",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "devDependencies": {
-    "@playwright/test": "^1.52.0"
-  }
+    "@playwright/test": "1.52.0",
+    "@types/node": "^22.15.21"
+  },
+"scripts": {
+  "test": "playwright test",
+  "test:headed": "playwright test --headed",
+  "test:debug": "playwright test --debug",
+  "report": "playwright show-report"
+}
+
 }
