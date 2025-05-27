@@ -28,7 +28,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN_3 }}
         with:
           args: >
-            -Dsonar.projectKey=SeuProjeto
-            -Dsonar.organization=SuaOrganizacao
+            -Dsonar.projectKey=GabrielWDuarte_GabrielDuarte-Turma001-E2ETest
+            -Dsonar.organization=gabrielwduarte   
             -Dsonar.sources=src
             -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
