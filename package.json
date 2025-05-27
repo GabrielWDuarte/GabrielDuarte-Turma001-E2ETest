@@ -1,15 +1,17 @@
 {
-  "name": "GabrielDuarte-Turma001-E2ETest",
+  "name": "saucedemo-playwright",
   "version": "1.0.0",
-  "devDependencies": {
-    "@playwright/test": "1.52.0",
-    "@types/node": "^22.15.21"
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "ci": "npx playwright install --with-deps && npx playwright test",
+    "report": "playwright show-report",
+    "clean": "rm -rf playwright-report artifacts"
   },
-"scripts": {
-  "test": "playwright test",
-  "test:headed": "playwright test --headed",
-  "test:debug": "playwright test --debug",
-  "report": "playwright show-report"
-}
-
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^18.0.0",
+    "@zerostep/playwright": "^0.1.5"
+  }
 }

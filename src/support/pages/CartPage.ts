@@ -9,7 +9,7 @@ export class CartPage {
     this.cartItems = page.locator('.cart_item');
   }
 
-  async assertProductInCart() {
+  async assertItemInCart() {
     await expect(this.cartItems.first()).toBeVisible();
   }
 }

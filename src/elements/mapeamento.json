@@ -1,0 +1,19 @@
+{
+  "login": {
+    "username": "[data-test=\"username\"]",
+    "password": "[data-test=\"password\"]",
+    "loginButton": "[data-test=\"login-button\"]",
+    "errorMessage": "[data-test=\"error\"]"
+  },
+  "menu": {
+    "menuButton": "#react-burger-menu-btn",
+    "logoutLink": "#logout_sidebar_link"
+  },
+  "products": {
+    "firstAddToCartButton": "[data-test^=\"add-to-cart\"]",
+    "cartButton": ".shopping_cart_link"
+  },
+  "cart": {
+    "cartItem": ".cart_item"
+  }
+}
