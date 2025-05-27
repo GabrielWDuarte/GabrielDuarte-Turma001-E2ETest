@@ -31,7 +31,7 @@ jobs:
           fetch-depth: 0
       - name: Setup Node.js environment
         uses: actions/setup-node@v4.0.0
-        with:
+        with: 
           node-version: 21
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@v2.0.2
